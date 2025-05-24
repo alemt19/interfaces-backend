@@ -21,6 +21,8 @@ services:
       DB_USER: postgres
       DB_PASS: postgres
       DB_NAME: interfaces
+      SALT_ROUNDS: 10
+      JWT_SECRET: jwt_secret
     volumes:
       - .:/app
     command: pnpm start:dev
